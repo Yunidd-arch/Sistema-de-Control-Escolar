@@ -1,0 +1,884 @@
+{
+  "tables": [
+    {
+      "id": "DL2s3T3gdDamuL3lSC4tp",
+      "name": "Alumnos",
+      "x": -624,
+      "y": -322.33333333333326,
+      "locked": false,
+      "fields": [
+        {
+          "name": "matricula_id",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": false,
+          "unsigned": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "9VnKaKY0u2noreRI4me6C",
+          "size": 10
+        },
+        {
+          "id": "5RHWdXBJq8BzqFzOcF7gd",
+          "name": "nombre",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 50
+        },
+        {
+          "id": "Gw4Ksh0OFwOk2SzRNRp2g",
+          "name": "apellido1",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 50
+        },
+        {
+          "id": "nCuTphR63s0QY5LQcoZgA",
+          "name": "apellido2",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": 50
+        },
+        {
+          "id": "Zob6VsU3y4OmwRPS0uzVc",
+          "name": "fecha_nacimiento",
+          "type": "DATE",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "GaCJCv4VqBXeC1KUIb-Hj",
+          "name": "carrera_id",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 10
+        },
+        {
+          "id": "_7p2l3GqgkTgPmY56ijzc",
+          "name": "colonia_id",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 200
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "uniqueConstraints": [],
+      "color": "#e8f011",
+      "collapsed": false
+    },
+    {
+      "id": "xfLltXsxDtyQJOXvjA5Of",
+      "name": "Carreras",
+      "x": 30.999999999999943,
+      "y": -255.66666666666663,
+      "locked": false,
+      "fields": [
+        {
+          "name": "carrera_id",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": false,
+          "unsigned": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "FFOFG4SSSpEVa_EcUnpMA",
+          "size": 10
+        },
+        {
+          "id": "MjoBk_d_QaCxEyFWxLduc",
+          "name": "nombre",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 255
+        },
+        {
+          "id": "kTdwN9AjNPhtPa4faci0H",
+          "name": "division_id",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 255
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "uniqueConstraints": [],
+      "color": "#7acc1d",
+      "collapsed": false
+    },
+    {
+      "id": "i0yfGoJfPB7MSoLAAQKpT",
+      "name": "Divisiones",
+      "x": 307.33333333333314,
+      "y": -851.6666666666667,
+      "locked": false,
+      "fields": [
+        {
+          "name": "division_id",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": false,
+          "unsigned": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "jnorawbN4Kih9n1XGK8CL",
+          "size": 200
+        },
+        {
+          "id": "oRaZ17gxZwWKIl_20H5lJ",
+          "name": "nombre",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 200
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "uniqueConstraints": [],
+      "color": "#12cce0",
+      "collapsed": false
+    },
+    {
+      "id": "oJIqe6xMlYhO-TxIFU-7Z",
+      "name": "Colonias",
+      "x": -909,
+      "y": 105.33333333333326,
+      "locked": false,
+      "fields": [
+        {
+          "name": "colonia_id",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": false,
+          "unsigned": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "oXfFD6Z91tDhzqXMU_WHG",
+          "size": 200,
+          "values": []
+        },
+        {
+          "id": "PyUL5wfMGVFzND9hAPo4c",
+          "name": "nombre",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 200
+        },
+        {
+          "id": "0JtOEmCM8Ub2CPPr_SjOG",
+          "name": "municipio_id",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 200,
+          "values": []
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "uniqueConstraints": [],
+      "color": "#f57b11",
+      "collapsed": false
+    },
+    {
+      "id": "TNalKd33RMdFzlHUJKQIp",
+      "name": "Municipios",
+      "x": -130.33333333333331,
+      "y": 71.33333333333326,
+      "locked": false,
+      "fields": [
+        {
+          "name": "municipio_id",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": false,
+          "unsigned": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "EvQBIHmO_MxD0CM0iTh2J",
+          "size": 200
+        },
+        {
+          "id": "nRJl3jMcg3d7_fp2i1_o2",
+          "name": "nombre",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 200
+        },
+        {
+          "id": "9I1xp1PdNJjWBpW4480P1",
+          "name": "estado_id",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 150
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "uniqueConstraints": [],
+      "color": "#f02c0e",
+      "collapsed": false
+    },
+    {
+      "id": "WfsNsDjknP3Ec19rKqS3U",
+      "name": "Estados",
+      "x": 340.83333333333314,
+      "y": 186.66666666666669,
+      "locked": false,
+      "fields": [
+        {
+          "name": "estado_id",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": false,
+          "unsigned": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "DYbW0l7Xww_RkJbuDr6VV",
+          "size": 255
+        },
+        {
+          "id": "1lmzM4KG9rp8If6rr8o1g",
+          "name": "nombre",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": 150
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "uniqueConstraints": [],
+      "color": "#350fdb",
+      "collapsed": false
+    },
+    {
+      "id": "nIPtGH_-g1yzmwWtZpK-L",
+      "name": "Materias",
+      "x": -820.3333333333335,
+      "y": -548.3333333333335,
+      "locked": false,
+      "fields": [
+        {
+          "name": "materia_id",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": false,
+          "unsigned": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "UbxX9OiYTtBaOSi1Q5igz",
+          "size": 10
+        },
+        {
+          "id": "LlGbMU2UD2K18WqTu6So6",
+          "name": "nombre",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 200
+        },
+        {
+          "id": "mWRb6s4aADwZNrmlv4osY",
+          "name": "creditos",
+          "type": "DECIMAL",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": "6,2"
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "uniqueConstraints": [],
+      "color": "#c313d6",
+      "collapsed": false
+    },
+    {
+      "id": "p7nE4ipbkNKDHbtb8vLR6",
+      "name": "Peridos",
+      "x": -49.000000000000114,
+      "y": -677.6666666666667,
+      "locked": false,
+      "fields": [
+        {
+          "name": "periodo_id",
+          "type": "BIGINT",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": false,
+          "unsigned": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": "MZZXVEaXvXCM9DY93nk0I",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "RVz-OXj3YUwsQwtpw1pm7",
+          "name": "nombre",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 200
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "uniqueConstraints": [],
+      "color": "#05e66e",
+      "collapsed": false
+    },
+    {
+      "id": "ET0iCEZd4ijmOjNn0vMh1",
+      "name": "Modalidades",
+      "x": -137.33333333333348,
+      "y": -486.99999999999994,
+      "locked": false,
+      "fields": [
+        {
+          "name": "nombre",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": false,
+          "unsigned": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "-htxTvdSBb2UK002gv5-m",
+          "size": 30,
+          "values": []
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "uniqueConstraints": [],
+      "color": "#0986b8",
+      "collapsed": false
+    },
+    {
+      "id": "hXK2om9MzegnVSWBQ_8qA",
+      "name": "Profesores",
+      "x": -1206.6666666666672,
+      "y": -237.33333333333331,
+      "locked": false,
+      "fields": [
+        {
+          "name": "profesorid",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": false,
+          "unsigned": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "TT-jOAT0q_CmbIDo84sCL",
+          "size": 20
+        },
+        {
+          "id": "VoX70tVlRwNjSFS-aZBFE",
+          "name": "nombre",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 50
+        },
+        {
+          "id": "QVw2_nGJzzxRMlXvx40EJ",
+          "name": "apellido1",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 50
+        },
+        {
+          "id": "sYmxlw7HZv2gZd4RPDLLV",
+          "name": "apellido2",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 50
+        },
+        {
+          "id": "crOynZ6isVHPPYx8nc9Y1",
+          "name": "sexo",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": 30
+        },
+        {
+          "id": "PvUF_P1akf5NwObRy9RiB",
+          "name": "curp",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": 20
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "uniqueConstraints": [],
+      "color": "#7a172d",
+      "collapsed": false
+    },
+    {
+      "id": "5Gc6JwHCyhFuRXVb5H4y_",
+      "name": "Grupos",
+      "x": -897.3333333333336,
+      "y": -969.3333333333329,
+      "locked": false,
+      "fields": [
+        {
+          "name": "grupo_id",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": false,
+          "unsigned": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "t1xVUHpma0t9vl8dEDeop",
+          "size": 200
+        },
+        {
+          "id": "QL8rC6PJdKdmFgXY2rLw4",
+          "name": "materia_id",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 10
+        },
+        {
+          "id": "CB6yxQATx7xizVuS_db2a",
+          "name": "division_id",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 200
+        },
+        {
+          "id": "nDHsfbZivVs_BYeVcCpL9",
+          "name": "periodo_id",
+          "type": "BIGINT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "ODWnFYEoRudVP7pCfGIoD",
+          "name": "modalidad_id",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 30
+        },
+        {
+          "id": "PRKZ418z_lodfRZWQXDLx",
+          "name": "ordinario",
+          "type": "DATE",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "ZG1lUiiX5HkMksYX3cZoh",
+          "name": "extraordinario",
+          "type": "DATE",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "28csRuI_YXk_6HD2XbGtT",
+          "name": "profesor_id",
+          "type": "VARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 20
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "uniqueConstraints": [],
+      "color": "#695016",
+      "collapsed": false
+    }
+  ],
+  "relationships": [
+    {
+      "startTableId": "xfLltXsxDtyQJOXvjA5Of",
+      "startFieldId": "FFOFG4SSSpEVa_EcUnpMA",
+      "endTableId": "DL2s3T3gdDamuL3lSC4tp",
+      "endFieldId": "GaCJCv4VqBXeC1KUIb-Hj",
+      "cardinality": "one_to_many",
+      "fields": [
+        {
+          "startFieldId": "FFOFG4SSSpEVa_EcUnpMA",
+          "endFieldId": "GaCJCv4VqBXeC1KUIb-Hj"
+        }
+      ],
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_alumnos_carrera_id",
+      "color": "#3d3b3b",
+      "id": "mQ-R-b8SsPdo4JGZxFZA3"
+    },
+    {
+      "startTableId": "xfLltXsxDtyQJOXvjA5Of",
+      "startFieldId": "kTdwN9AjNPhtPa4faci0H",
+      "endTableId": "i0yfGoJfPB7MSoLAAQKpT",
+      "endFieldId": "jnorawbN4Kih9n1XGK8CL",
+      "cardinality": "many_to_one",
+      "fields": [
+        {
+          "startFieldId": "kTdwN9AjNPhtPa4faci0H",
+          "endFieldId": "jnorawbN4Kih9n1XGK8CL"
+        }
+      ],
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_carreras_division_id",
+      "color": "#2b2a2a",
+      "id": "tChYuDDZ013PZqq02-Nxq"
+    },
+    {
+      "startTableId": "DL2s3T3gdDamuL3lSC4tp",
+      "startFieldId": "_7p2l3GqgkTgPmY56ijzc",
+      "endTableId": "oJIqe6xMlYhO-TxIFU-7Z",
+      "endFieldId": "oXfFD6Z91tDhzqXMU_WHG",
+      "cardinality": "many_to_one",
+      "fields": [
+        {
+          "startFieldId": "_7p2l3GqgkTgPmY56ijzc",
+          "endFieldId": "oXfFD6Z91tDhzqXMU_WHG"
+        }
+      ],
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_Alumnos_colonia_id",
+      "color": "#302f2f",
+      "id": "8UwYUGIvK6KrTnRKwioET"
+    },
+    {
+      "startTableId": "oJIqe6xMlYhO-TxIFU-7Z",
+      "startFieldId": "0JtOEmCM8Ub2CPPr_SjOG",
+      "endTableId": "TNalKd33RMdFzlHUJKQIp",
+      "endFieldId": "EvQBIHmO_MxD0CM0iTh2J",
+      "cardinality": "many_to_one",
+      "fields": [
+        {
+          "startFieldId": "0JtOEmCM8Ub2CPPr_SjOG",
+          "endFieldId": "EvQBIHmO_MxD0CM0iTh2J"
+        }
+      ],
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_Colonias_municipio_id",
+      "color": "#363434",
+      "id": "kuh3Bw7kA2N-XrkV7X1ve"
+    },
+    {
+      "startTableId": "TNalKd33RMdFzlHUJKQIp",
+      "startFieldId": "9I1xp1PdNJjWBpW4480P1",
+      "endTableId": "WfsNsDjknP3Ec19rKqS3U",
+      "endFieldId": "DYbW0l7Xww_RkJbuDr6VV",
+      "cardinality": "many_to_one",
+      "fields": [
+        {
+          "startFieldId": "9I1xp1PdNJjWBpW4480P1",
+          "endFieldId": "DYbW0l7Xww_RkJbuDr6VV"
+        }
+      ],
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_Municipios_estado_id",
+      "color": "#333131",
+      "id": "k-tN8iUeLMU9_K8Lq9STt"
+    },
+    {
+      "startTableId": "5Gc6JwHCyhFuRXVb5H4y_",
+      "startFieldId": "28csRuI_YXk_6HD2XbGtT",
+      "endTableId": "hXK2om9MzegnVSWBQ_8qA",
+      "endFieldId": "TT-jOAT0q_CmbIDo84sCL",
+      "cardinality": "many_to_one",
+      "fields": [
+        {
+          "startFieldId": "28csRuI_YXk_6HD2XbGtT",
+          "endFieldId": "TT-jOAT0q_CmbIDo84sCL"
+        }
+      ],
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_Grupos_profesor_id",
+      "color": "#262525",
+      "id": "1Kpdo1JZkwEQKtnI1IOxx"
+    },
+    {
+      "startTableId": "5Gc6JwHCyhFuRXVb5H4y_",
+      "startFieldId": "nDHsfbZivVs_BYeVcCpL9",
+      "endTableId": "p7nE4ipbkNKDHbtb8vLR6",
+      "endFieldId": "MZZXVEaXvXCM9DY93nk0I",
+      "cardinality": "many_to_one",
+      "fields": [
+        {
+          "startFieldId": "nDHsfbZivVs_BYeVcCpL9",
+          "endFieldId": "MZZXVEaXvXCM9DY93nk0I"
+        }
+      ],
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_Grupos_periodo_id",
+      "color": "#333131",
+      "id": "DunKjsa4WXGMYcxsS1XWr"
+    },
+    {
+      "startTableId": "5Gc6JwHCyhFuRXVb5H4y_",
+      "startFieldId": "QL8rC6PJdKdmFgXY2rLw4",
+      "endTableId": "nIPtGH_-g1yzmwWtZpK-L",
+      "endFieldId": "UbxX9OiYTtBaOSi1Q5igz",
+      "cardinality": "many_to_one",
+      "fields": [
+        {
+          "startFieldId": "QL8rC6PJdKdmFgXY2rLw4",
+          "endFieldId": "UbxX9OiYTtBaOSi1Q5igz"
+        }
+      ],
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_Grupos_materia_id",
+      "color": "#333232",
+      "id": "baw6ulDSekxuFDvLE5WZj"
+    },
+    {
+      "startTableId": "5Gc6JwHCyhFuRXVb5H4y_",
+      "startFieldId": "ODWnFYEoRudVP7pCfGIoD",
+      "endTableId": "ET0iCEZd4ijmOjNn0vMh1",
+      "endFieldId": "-htxTvdSBb2UK002gv5-m",
+      "cardinality": "many_to_one",
+      "fields": [
+        {
+          "startFieldId": "ODWnFYEoRudVP7pCfGIoD",
+          "endFieldId": "-htxTvdSBb2UK002gv5-m"
+        }
+      ],
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_Grupos_modalidad_id",
+      "color": "#363434",
+      "id": "KupBi8iAdhnviEcjW3luS"
+    },
+    {
+      "startTableId": "5Gc6JwHCyhFuRXVb5H4y_",
+      "startFieldId": "CB6yxQATx7xizVuS_db2a",
+      "endTableId": "i0yfGoJfPB7MSoLAAQKpT",
+      "endFieldId": "jnorawbN4Kih9n1XGK8CL",
+      "cardinality": "many_to_one",
+      "fields": [
+        {
+          "startFieldId": "CB6yxQATx7xizVuS_db2a",
+          "endFieldId": "jnorawbN4Kih9n1XGK8CL"
+        }
+      ],
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_Grupos_division_id",
+      "color": "#403e3e",
+      "id": "0wCDwlmQImL_F0nSISyD8"
+    }
+  ],
+  "notes": [],
+  "subjectAreas": [],
+  "views": [],
+  "database": "mysql",
+  "title": ""
+}
